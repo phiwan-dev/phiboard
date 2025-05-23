@@ -13,3 +13,30 @@ units:
   $default_width: cx
   $default_height: cy
 
+points:
+  zones:
+    matrix:
+      key:
+        padding: ky
+        spread: kx
+
+      columns:
+        outer:
+          rows.bottom.skip: true
+        pinky:
+          key.stagger: 5
+        ring:
+          key.stagger: 10
+        middle:
+          key.stagger: 7
+        index:
+          key.stagger: -7
+        inner:
+          key.stagger: 0
+
+      rows:
+        bottom:
+        home:
+        top:
+
+
