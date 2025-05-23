@@ -3,3 +3,13 @@ meta:
   author: phiwan
 
 
+units:
+  kx: cx
+  ky: cy
+  # padding
+  px: kx + 2
+  py: ky + 2
+  # adjust preview rendering
+  $default_width: cx
+  $default_height: cy
+
