@@ -39,4 +39,21 @@ points:
         home:
         top:
 
+    thumbs:
+      key:
+        spread: 22
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-25, -ky]
+      columns:
+        left:
+          key.splay: 0
+        middle:
+          key.splay: -15
+          key.shift: [0, -3]
+        right:
+          key.splay: -15
+          key.shift: [0, -6]
+      rows:
+        cluster:
 
