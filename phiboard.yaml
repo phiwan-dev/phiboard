@@ -1,11 +1,14 @@
+
 meta:
   engine: 4.1.0
   author: phiwan
-
-
+  
 units:
   kx: cx
   ky: cy
+  # halfs
+  khx: kx/2
+  khy: ky/2
   # padding
   px: kx + 2
   py: ky + 2
@@ -13,13 +16,13 @@ units:
   $default_width: cx
   $default_height: cy
 
+
 points:
   zones:
     matrix:
       key:
         padding: ky
         spread: kx
-
       columns:
         outer:
           rows.bottom.skip: true
@@ -33,12 +36,10 @@ points:
           key.stagger: -7
         inner:
           key.stagger: 0
-
       rows:
         bottom:
         home:
         top:
-
     thumbs:
       key:
         spread: 22
@@ -56,4 +57,62 @@ points:
           key.shift: [0, -6]
       rows:
         cluster:
+
+  mirror:
+    ref: thumbs_right_cluster
+    distance: 2ky
+
+
+outlines:
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx, ky]
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_outer_top
+          shift: [-khx-2,khy+2]
+        - ref: matrix_outer_top
+          shift: [khx-2,khy+2]
+        - ref: matrix_pinky_top
+          shift: [-khx-2,khy+2]
+        - ref: matrix_pinky_top
+          shift: [khx-2,khy+2]
+        - ref: matrix_ring_top
+          shift: [-khx-2,khy+2]
+        - ref: matrix_ring_top
+          shift: [khx-2,khy+2]
+        - ref: matrix_middle_top
+          shift: [-khx-2,khy+2]
+        - ref: matrix_middle_top
+          shift: [khx+2,khy+2]
+        - ref: matrix_index_top
+          shift: [-khx+2,khy+2]
+        - ref: matrix_inner_top
+          shift: [29,khy+2]
+        - ref: thumbs_right_cluster
+          shift: [khx+2,khy]
+        - ref: thumbs_right_cluster
+          shift: [khx+2,-khy-2]
+        - ref: thumbs_right_cluster
+          shift: [-khx,-khy-2]
+        - ref: thumbs_middle_cluster
+          shift: [-khx-1,-khy-2]
+        - ref: thumbs_left_cluster
+          shift: [-khx-2,-khy-2]
+        - ref: matrix_pinky_bottom
+          shift: [khx,-khy-2]
+        - ref: matrix_pinky_bottom
+          shift: [-khx-2,-khy-2]
+        - ref: matrix_outer_home
+          shift: [khx-2,-khy-2]
+        - ref: matrix_outer_home
+          shift: [-khx-2,-khy-2]
+      fillet: 2
+  combined:
+    - name: board
+    - operation: stack
+      name: keys
 
