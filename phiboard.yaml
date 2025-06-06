@@ -57,10 +57,8 @@ points:
           key.shift: [0, -6]
       rows:
         cluster:
+    # screw points
 
-  mirror:
-    ref: thumbs_right_cluster
-    distance: 2ky
 
 
 outlines:
