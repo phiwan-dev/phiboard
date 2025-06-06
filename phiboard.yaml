@@ -114,3 +114,21 @@ outlines:
     - operation: stack
       name: keys
 
+
+pcbs:
+  pcb:
+    outlines.main.outline: board
+    footprints:
+
+      # hotswap choc
+      switches:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          #keycaps: false
+          reverse: true
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+
