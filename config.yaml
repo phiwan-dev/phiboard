@@ -20,8 +20,11 @@ units:
 
 points:
   zones:
+    # main key matrix
     matrix:
+      anchor.shift: [170, -170]
       key:
+        tags: [key]
         padding: ky
         spread: kx
       columns:
@@ -53,8 +56,10 @@ points:
         bottom.row_net: rbottom
         home.row_net: rhome
         top.row_net: rtop
+    # thumb clusters
     thumbs:
       key:
+        tags: [key]
         spread: 22
       anchor:
         ref: matrix_inner_bottom
@@ -74,6 +79,19 @@ points:
       rows:
         cluster.row_net: rthumbs
     # screw points
+    screws:
+      key.tags: [screw]
+      key.spread: 0
+      anchor:
+        ref: matrix_outer_top
+      columns:
+        left_top.key.shift: [khx+0.3, -3.5]
+        left_bottom.key.shift: [khx+0.3, -ky-3.5]
+        middle_top.key.shift: [2kx+khx+0.3, ky-3.5]
+        middle_bottom.key.shift: [3kx+6, -ky-7]
+        right_top.key.shift: [4kx+khx, +6.5]
+        right_bottom.key.shift: [5kx+khx+2, -2ky+2]
+
 
 
 outlines:
@@ -138,7 +156,7 @@ pcbs:
       # hotswap choc
       switches:
         what: choc
-        where: true
+        where: [key]
         params:
           keycaps: true
           #keycaps: false   # outline on the pcb
@@ -150,7 +168,7 @@ pcbs:
       # smd diodes
       diodes:
         what: combo_diode
-        where: true
+        where: [key]
         params:
           include_smd: true
           include_tht: false
@@ -192,5 +210,11 @@ pcbs:
         where:
           ref: matrix_inner_home
           shift: [kx+2, 0]
+
+      screws:
+        what: mounting_hole
+        params:
+          drill: 3.6
+        where: [screw]
 
 
