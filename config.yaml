@@ -2,7 +2,8 @@
 meta:
   engine: 4.1.0
   author: phiwan
-  
+
+
 units:
   kx: cx
   ky: cy
@@ -58,7 +59,6 @@ points:
       rows:
         cluster:
     # screw points
-
 
 
 outlines:
@@ -126,9 +126,23 @@ pcbs:
         where: true
         params:
           keycaps: true
-          #keycaps: false
+          #keycaps: false   # outline on the pcb
           reverse: true
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
+
+      # smd diodes
+      diodes:
+        what: combo_diode
+        where: true
+        params:
+          include_smd: true
+          include_tht: false
+          #include_via: false
+          reversible: true
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
 
