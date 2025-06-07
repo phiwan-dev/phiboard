@@ -180,3 +180,17 @@ pcbs:
           ref: matrix_inner_top
           shift: [kx+2, -2]
 
+      battery_pads:
+        what: pads
+        params:
+          reverse: true
+          net_1: "BAT+"
+          net_2: "GND"
+          label_1: "+"
+          label_2: ""
+          space: 1.25
+        where:
+          ref: matrix_inner_home
+          shift: [kx+2, 0]
+
+
