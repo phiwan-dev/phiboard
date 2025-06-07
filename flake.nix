@@ -19,6 +19,7 @@
               export __GLX_VENDOR_LIBRARY_NAME="" # To fix kicad with nvidia drivers
 
               echo loaded ergogen shell
+              echo "workflow: ergogen . && cp output/pcbs/pcb.kicad_pcb kicad-prj/"
             '';
         };
     };

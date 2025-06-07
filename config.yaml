@@ -46,7 +46,7 @@ points:
         spread: 22
       anchor:
         ref: matrix_inner_bottom
-        shift: [-25, -ky]
+        shift: [-24, -ky]
       columns:
         left:
           key.splay: 0
@@ -89,15 +89,15 @@ outlines:
         - ref: matrix_index_top
           shift: [-khx+2,khy+2]
         - ref: matrix_inner_top
-          shift: [29,khy+2]
+          shift: [30.6,khy+2]
         - ref: thumbs_right_cluster
-          shift: [khx+2,khy]
+          shift: [khx+2,khy+1]  # not an error
         - ref: thumbs_right_cluster
           shift: [khx+2,-khy-2]
         - ref: thumbs_right_cluster
           shift: [-khx,-khy-2]
         - ref: thumbs_middle_cluster
-          shift: [-khx-1,-khy-2]
+          shift: [-khx-1,-khy-2]  # not an error
         - ref: thumbs_left_cluster
           shift: [-khx-2,-khy-2]
         - ref: matrix_pinky_bottom
@@ -145,4 +145,23 @@ pcbs:
           to: "{{row_net}}"
         adjust:
           shift: [0, -5]
+
+      # mcu with reversible pins
+      xiao_ble:
+        what: xiao_ble_smd_reversible
+        params:
+          D0: "rtop"
+          D1: "rhome"
+          D2: "rbottom"
+          D3: "rthumbs"
+          D4: "sda"
+          D5: "scl"
+          D6: "cinner"
+          D7: "cindex"
+          D8: "cmiddle"
+          D9: "cring"
+          D10: "cpinky"
+        where:
+          ref: matrix_inner_top
+          shift: [kx+2, -2]
 
