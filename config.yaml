@@ -26,21 +26,33 @@ points:
         spread: kx
       columns:
         outer:
+          # upper key
+          rows.top.column_net: cpinky
+          rows.top.row_net: rthumbs
+          # lower key
+          rows.home.column_net: cring
+          rows.home.row_net: rthumbs
+          # this column only has 2 keys
           rows.bottom.skip: true
-        pinky:
-          key.stagger: 5
-        ring:
-          key.stagger: 10
-        middle:
-          key.stagger: 7
-        index:
-          key.stagger: -7
-        inner:
-          key.stagger: 0
+        pinky.key:
+          stagger: 5
+          column_net: cpinky
+        ring.key:
+          stagger: 10
+          column_net: cring
+        middle.key:
+          stagger: 7
+          column_net: cmiddle
+        index.key:
+          stagger: -7
+          column_net: cindex
+        inner.key:
+          stagger: 0
+          column_net: cinner
       rows:
-        bottom:
-        home:
-        top:
+        bottom.row_net: rbottom
+        home.row_net: rhome
+        top.row_net: rtop
     thumbs:
       key:
         spread: 22
@@ -48,16 +60,19 @@ points:
         ref: matrix_inner_bottom
         shift: [-24, -ky]
       columns:
-        left:
-          key.splay: 0
-        middle:
-          key.splay: -15
-          key.shift: [0, -3]
-        right:
-          key.splay: -15
-          key.shift: [0, -6]
+        left.key:
+          splay: 0
+          column_net: cmiddle
+        middle.key:
+          splay: -15
+          shift: [0, -3]
+          column_net: cindex
+        right.key:
+          splay: -15
+          shift: [0, -6]
+          column_net: cinner
       rows:
-        cluster:
+        cluster.row_net: rthumbs
     # screw points
 
 
