@@ -211,10 +211,27 @@ pcbs:
           ref: matrix_inner_home
           shift: [kx+2, 0]
 
+      # OLED Screen
+      # added manually in kicad
+      # uses jumpers to make it reversible
+
       screws:
         what: mounting_hole
         params:
           drill: 3.6
         where: [screw]
 
+      # small custom graphics
+      phi-caps:
+        what: phi-caps
+        params.scale: 0.013
+        where:
+          ref: thumbs_left_cluster
+          shift: [-2kx-2, 16]
+      phi-logo:
+        what: phi-logo
+        params.scale: 0.011
+        where:
+          ref: thumbs_left_cluster
+          shift: [-2kx+2, 14]
 
