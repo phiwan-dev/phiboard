@@ -1,6 +1,7 @@
 // Seeduino XIAO BLE THT
 // https://wiki.seeedstudio.com/XIAO_BLE/
-// https://github.com/crides/kleeb/blob/master/mcu.pretty/xiao-ble-tht.kicad_mod 
+// Taken and modified from: https://github.com/crides/kleeb/blob/master/mcu.pretty/xiao-ble-tht.kicad_mod 
+// removed reset pins and holes
 module.exports = {
   params: {
     designator: 'MCU',
@@ -66,8 +67,6 @@ module.exports = {
         (stroke (width 0.12) (type solid)) (fill none) (layer "Dwgs.User") (tstamp 73cb09ad-e380-49f3-bc9d-038b1104bc93))
       (fp_rect (start -4.75 -0.25) (end -2.35 1.25)
         (stroke (width 0.05) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 724d0c56-5476-429f-ac61-6c9856d610a8))
-      (fp_rect (start -1.7 -6) (end 1.7 -4.5)
-        (stroke (width 0.05) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 896c3b8d-9f11-471d-ad6e-be0ffb5264b9))
       (fp_rect (start 2.35 -0.25) (end 4.75 1.25)
         (stroke (width 0.05) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 2d16504a-3eb6-4b73-a511-2febd5a0fc1f))
 
@@ -99,8 +98,6 @@ module.exports = {
       (pad "13" smd oval (at -8.56996 -5.08) (size 2.75 1.8) (drill (offset 0.475 0)) (layers "B.Cu" "B.Paste" "B.Mask") ${p.GND.str})
       (pad "14" smd oval (at -8.56996 -7.62) (size 2.75 1.8) (drill (offset 0.475 0)) (layers "B.Cu" "B.Paste" "B.Mask") ${p._5V.str})
       (pad "14" smd oval (at 8.56996 -7.62) (size 2.75 1.8) (drill (offset -0.475 0)) (layers "F.Cu" "F.Paste" "F.Mask") ${p._5V.str})
-      (pad "17" thru_hole circle (at -1.27 -6.032 90) (size 1.397 1.397) (drill 1.016) (property pad_prop_castellated) (layers *.Cu *.Mask) ${p.GND.str})
-      (pad "18" thru_hole circle (at 1.27 -6.032 270) (size 1.397 1.397) (drill 1.016) (property pad_prop_castellated) (layers *.Cu *.Mask) ${p.RST.str})
       (pad "19" thru_hole circle (at 4.445 -0.317 180) (size 1.397 1.397) (drill 1.016) (property pad_prop_castellated) (layers *.Cu *.Mask) ${p.BATP.str})
       (pad "19" thru_hole circle (at -4.445 -0.317 180) (size 1.397 1.397) (drill 1.016) (property pad_prop_castellated) (layers *.Cu *.Mask) ${p.BATP.str})
     )
