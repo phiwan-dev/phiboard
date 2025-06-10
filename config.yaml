@@ -97,7 +97,7 @@ points:
 outlines:
   keys:
     - what: rectangle
-      where: true
+      where: [key]
       size: [kx, ky]
   board:
     - what: polygon
@@ -158,8 +158,7 @@ pcbs:
         what: choc
         where: [key]
         params:
-          keycaps: true
-          #keycaps: false   # outline on the pcb
+          keycaps: false   # outline on the pcb
           reverse: true
           hotswap: true
           from: "{{column_net}}"
@@ -172,7 +171,6 @@ pcbs:
         params:
           include_smd: true
           include_tht: false
-          #include_via: false
           reversible: true
           from: "{{colrow}}"
           to: "{{row_net}}"
@@ -190,14 +188,15 @@ pcbs:
           D4: "sda"
           D5: "scl"
           D6: "cinner"
-          D7: "cindex"
-          D8: "cmiddle"
-          D9: "cring"
           D10: "cpinky"
+          D9: "cring"
+          D8: "cmiddle"
+          D7: "cindex"
         where:
           ref: matrix_inner_top
-          shift: [kx+2, -2]
+          shift: [kx+2, 0]
 
+      # raw battery pads, no connector
       battery_pads:
         what: pads
         params:
@@ -211,7 +210,7 @@ pcbs:
           ref: matrix_inner_home
           shift: [kx+2, 0]
 
-      # OLED Screen
+      # OLED screen
       # added manually in kicad
       # uses jumpers to make it reversible
 
@@ -221,7 +220,12 @@ pcbs:
           drill: 3.6
         where: [screw]
 
+      # silkscreen
+      # added manually in kicad
+      # different graphics for front and back
+
       # small custom graphics
+      # different graphics for front and back
       phi-caps:
         what: phi-caps
         params.scale: 0.013
