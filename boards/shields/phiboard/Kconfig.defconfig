@@ -1,0 +1,16 @@
+if SHIELD_PHIBOARD_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "phiboard"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_PHIBOARD_LEFT
+
+if SHIELD_PHIBOARD_LEFT || SHIELD_PHIBOARD_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_PHIBOARD_LEFT || SHIELD_PHIBOARD_RIGHT
