@@ -1,9 +1,9 @@
 if SHIELD_GOOSE_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Cherry Goose"
+    default "phiboard v1"
 config USB_DEVICE_MANUFACTURER
-    default "Pipshag"
+    default "phiwan"
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 

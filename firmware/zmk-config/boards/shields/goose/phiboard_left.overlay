@@ -1,4 +1,5 @@
-#include "goose.dtsi"
+#include "phiboard.dtsi"
+
 / {
     chosen {
         zmk,kscan = &kscan0;

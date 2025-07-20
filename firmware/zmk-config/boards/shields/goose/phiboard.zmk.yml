@@ -1,0 +1,12 @@
+file_format: "1"
+id: phiboard
+name: phiboard
+type: shield
+url: https://github.com/phiwan-dev/phiboard
+requires:
+  - seeeduino_xiao_ble
+features:
+  - keys
+siblings:
+  - phiboard_left
+  - phiboard_right

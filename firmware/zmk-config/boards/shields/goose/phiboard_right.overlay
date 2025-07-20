@@ -1,4 +1,4 @@
-#include "goose.dtsi"
+#include "phiboard.dtsi"
 
 / {
     chosen {
