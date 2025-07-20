@@ -96,10 +96,6 @@
 &kp Z            &kp X            &kp C                &kp V              &kp B   &kp K      &kp M               &kp COMMA             &kp PERIOD        &kp SLASH
                  &trans           &kp ESCAPE           &lt 3 SPACE        &ss_cw  &kp ENTER  &lt 1 BACKSPACE     &lt 2 DELETE          &kp RIGHT_ALT
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         num_fun {
@@ -109,8 +105,6 @@
 &none  &kp N1    &kp N2     &kp N3  &kp DOT    &kp C_NEXT  &kp F1  &kp F2  &kp F3  &none
        &kp PLUS  &kp EQUAL  &kp N0  &kp MINUS  &trans      &trans  &trans  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp K_REDO K_UNDO>;
         };
 
         sym_uti {
@@ -120,8 +114,6 @@
 &kp BSLH     &kp AMPERSAND  &kp EXCLAMATION  &kp EQUAL   &kp UNDERSCORE  &none   &kp LBKT              &kp RBKT               &kp TILDE      &kp GRAVE
              &trans         &trans           &trans      &trans          &trans  &trans                &trans                 &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
         };
 
         nav_sys {
@@ -141,7 +133,6 @@
        &kp TAB  &kp ESC  &kp SPACE  &kp LSHFT  &kp ENTER  &kp BSPC  &kp TAB    &tog 4
             >;
         };
-
-        sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+    
     };
 };

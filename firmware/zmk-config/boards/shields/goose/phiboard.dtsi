@@ -18,30 +18,4 @@
         >;
     };
 
-    //left_encoder: left_encoder {
-        //compatible = "alps,ec11";
-        //label = "LEFT_ENCODER";
-        //steps = <80>;
-        //status = "disabled";
-
-        //a-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        //b-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    //};
-
-    //right_encoder: right_encoder {
-        //compatible = "alps,ec11";
-        //label = "RIGHT_ENCODER";
-        //steps = <80>;
-        //status = "disabled";
-
-        //a-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        //b-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    //};
-
-    //sensors {
-        //compatible = "zmk,keymap-sensors";
-        //sensors = <&left_encoder &right_encoder>;
-        //triggers-per-rotation = <24>;
-    //};
-
 };
