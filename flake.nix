@@ -13,6 +13,8 @@
               ergogen
               librecad  # for 2D outlines
               kicad     # for PCBs
+
+	      devcontainer
             ];
 
             shellHook = ''
