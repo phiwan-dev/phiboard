@@ -11,10 +11,11 @@ in progress...
 - custom graphics and silk screen
 
 
+
 # Manual additions after Ergogen
-Ergogen is used to generate most parts of the PCB. This can be done using:
+Ergogen is used to generate most parts of the PCB. From within the ergogen folder, this can be done using:
 ```
-ergogen . && cp output/pcbs/pcb.kicad_pcb kicad-prj/
+ergogen . && cp output/pcbs/pcb.kicad_pcb ../kicad-prj/
 ```
 However, various smaller modifications as well as the reversible OLED and silkscreen graphics are placed manually by hand.
 It is likely that this could be done through ergogen as well, feel free to fork and adjust my config.
@@ -25,8 +26,9 @@ All modifications are listed in here:
 - Put on silkscreens on front [`porsche-front-big.kicad_mod`](./kicad-prj/graphics.pretty/porsche-front-big.kicad_mod) and back [`porsche-back-big.kicad_mod`](./kicad-prj/graphics.pretty/porsche-back-big.kicad_mod)
 
 
+
 # Customize Graphics
-In [graphics](./graphics/) you can find the source images used in this project.
+In [graphics](./kicad-prj/graphics/) you can find the source images used in this project.
 There are two types of graphics.
 ### Silkscreen
 The silksceen uses the porsche images.
@@ -44,7 +46,8 @@ You will most likely have a .png or .jpg image, which needs to be transformed to
 For this you can use popular online tools like [convertio.co](https://convertio.co/).
 Optionally you can try to optimize your svg using [this website](https://optimize.svgomg.net/), although it didn't make much of a difference for me.
 Next, we need to transform our svg into an array of points, for which i used [this website](https://shinao.github.io/PathToPoints/).
-Lastly, you can replace the point array in [`footprints/phi-caps`](./footprints/phi-caps.js) for the front side or [`footprints/phi-logo`](./footprints/phi-logo.js) for the back side.
+Lastly, you can replace the point array in [`ergogen/footprints/phi-caps`](./ergogen/footprints/phi-caps.js) for the front side or [`ergogen/footprints/phi-logo`](./ergogen/footprints/phi-logo.js) for the back side.
+
 
 
 # Parts
@@ -57,38 +60,53 @@ Lastly, you can replace the point array in [`footprints/phi-caps`](./footprints/
 - 2 oled 0.91 inch i2c (optional)
 - 2 batteries 3.7v (optional, requres cable otherwise)
 
+
+
 # Firmware
-## Using ZMK locally using docker
-For now, this is the tutorial to get the goosekb to work.
+Usually ZMK is compiled throug a GitHub actions workflow. However, I prefer to use it locally using a docker devcontainer. The devcontainer is provided by the official ZMK project.
+
+## Setting up the ZMK docker toolchain
 ```bash
-cd <path-to-goosekb>
-docker volume create --driver local -o o=bind -o type=none -o device="<absolute-path-to-goosekb>/config/" zmk-config  # enter absolute path
+cd <path-to-phiboard>
+nix develop     # or install devcontainer cli otherwise
+docker volume create --driver local -o o=bind -o type=none -o device="<absolute-path-to-phiboard>/firmware/zmk-config/" zmk-config
 git clone https://github.com/zmkfirmware/zmk.git firmware/zmk
-nix shell nixpkgs#devcontainer  # or install devcontainer otherwise
 devcontainer up --workspace-folder firmware/zmk
 docker ps -a    # get zmk container name
-docker exec -it <zmk-container-name> /bin/bash
+docker exec -it <zmk-container-name> /usr/bin/env bash
 # now from within container
 cd /workspaces/zmk
 west init -l app/
 west update
-# actually build the firmware
-cd app
+```
+
+## Compiling the ZMK firmware
+```bash
+# enter the docker container
+docker ps -a    # get zmk container name
+docker exec -it <zmk-container-name> /usr/bin/env bash
+# now from within the container
+cd /workspaces/zmk/app
 rm -rf build/
-west build -p -d build/left -b seeeduino_xiao_ble -- -DSHIELD=goose_left -DZMK_CONFIG="/workspaces/zmk-config"
-west build -p -d build/right -b seeeduino_xiao_ble -- -DSHIELD=goose_right -DZMK_CONFIG="/workspaces/zmk-config"
+west build -p -d build/left -b seeeduino_xiao_ble -- -DSHIELD=phiboard_left -DZMK_CONFIG="/workspaces/zmk-config"
+west build -p -d build/right -b seeeduino_xiao_ble -- -DSHIELD=phiboard_right -DZMK_CONFIG="/workspaces/zmk-config"
 cp build/left/zephyr/zmk.uf2 build/left.uf2
 cp build/right/zephyr/zmk.uf2 build/right.uf2
-# connect mcu with pc
-# double press the reset button
-# the file explorer should now show a usb media
-# copy the corresponding .uf2 firmware to the usb media
-# it should now auto-eject and run the new firmware
+# the firmware can now be accessed outside the docker container at <path-to-phiboard>/firmware/zmk/app/build/
 ```
+
+## Flashing the firmware
+- connect mcu with pc
+- double press the reset button
+- the file explorer should now show a usb media
+- copy the corresponding .uf2 firmware to the usb media
+- it should now auto-eject and run the new firmware
+
+
 
 # Thanks
 - to https://github.com/MvEerd/ergogen/tree/mveerd for ergogen
 - to https://flatfootfox.com/ergogen-introduction/ for teaching ergogen
-- to https://github.com/Pipshag/goosekb for inspiration
+- to https://github.com/Pipshag/goosekb for inspiration on ergogen and zmk
 - to https://www.youtube.com/watch?v=ohu4tZ4qov8 for finally making me follow through
 - and many, many more!

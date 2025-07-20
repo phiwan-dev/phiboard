@@ -1,7 +1,7 @@
-if SHIELD_GOOSE_LEFT
+if SHIELD_PHIBOARD_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "phiboard v1"
+    default "phiboard"
 config USB_DEVICE_MANUFACTURER
     default "phiwan"
 config ZMK_SPLIT_ROLE_CENTRAL
@@ -9,7 +9,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_GOOSE_LEFT || SHIELD_GOOSE_RIGHT
+if SHIELD_PHIBOARD_LEFT || SHIELD_PHIBOARD_RIGHT
 
 config ZMK_SPLIT
     default y
