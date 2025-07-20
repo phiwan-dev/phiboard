@@ -9,6 +9,7 @@ in progress...
 - no visible screws from the top
 - no visible seams from the top
 - custom graphics and silk screen
+- super easy, local zmk development
 
 
 
@@ -67,32 +68,18 @@ Usually ZMK is compiled throug a GitHub actions workflow. However, I prefer to u
 
 ## Setting up the ZMK docker toolchain
 ```bash
-cd <path-to-phiboard>
 nix develop     # or install devcontainer cli otherwise
-docker volume create --driver local -o o=bind -o type=none -o device="<absolute-path-to-phiboard>/firmware/zmk-config/" zmk-config
-git clone https://github.com/zmkfirmware/zmk.git firmware/zmk
-devcontainer up --workspace-folder firmware/zmk
-docker ps -a    # get zmk container name
-docker exec -it <zmk-container-name> /usr/bin/env bash
-# now from within container
-cd /workspaces/zmk
-west init -l app/
-west update
+cd <path-to-phiboard>/firmware
+./setup-zmk.sh  # this may take a while
 ```
 
 ## Compiling the ZMK firmware
 ```bash
-# enter the docker container
-docker ps -a    # get zmk container name
-docker exec -it <zmk-container-name> /usr/bin/env bash
-# now from within the container
-cd /workspaces/zmk/app
-rm -rf build/
-west build -p -d build/left -b seeeduino_xiao_ble -- -DSHIELD=phiboard_left -DZMK_CONFIG="/workspaces/zmk-config"
-west build -p -d build/right -b seeeduino_xiao_ble -- -DSHIELD=phiboard_right -DZMK_CONFIG="/workspaces/zmk-config"
-cp build/left/zephyr/zmk.uf2 build/left.uf2
-cp build/right/zephyr/zmk.uf2 build/right.uf2
-# the firmware can now be accessed outside the docker container at <path-to-phiboard>/firmware/zmk/app/build/
+nix develop     # or install devcontainer cli otherwise
+cd <path-to-phiboard>/firmware
+./build.sh  # clean build, is needed the first time
+./build.sh --cached   # faster, if a build has been done before
+# the firmware is now located at <path-to-phiboard>/firmware/(left|right).uf2
 ```
 
 ## Flashing the firmware
