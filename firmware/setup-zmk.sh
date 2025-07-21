@@ -29,6 +29,8 @@ echo doing a clean build...
     cd app/
     west build -p -d build/left -b seeeduino_xiao_ble -- -DSHIELD=phiboard_left -DZMK_CONFIG="/workspaces/zmk-config"
     west build -p -d build/right -b seeeduino_xiao_ble -- -DSHIELD=phiboard_right -DZMK_CONFIG="/workspaces/zmk-config"
+    echo == clean build completed ==
+    echo future builds can be done with the --cached option
 )
 " > zmk/phiboard-build.sh
 chmod +x zmk/phiboard-build.sh

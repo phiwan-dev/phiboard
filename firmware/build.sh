@@ -1,8 +1,11 @@
 #! /usr/bin/env bash
 
+rm -rf left.uf2 right.uf2
+
 if [ "$1" == "--cached" ]; then
     devcontainer exec --workspace-folder ./zmk /bin/bash phiboard-build-cached.sh
 else
+    devcontainer up --workspace-folder ./zmk
     devcontainer exec --workspace-folder ./zmk /bin/bash phiboard-build.sh
 fi
 
