@@ -6,6 +6,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define QUICK_TAP_MS 125
 #define TAPPING_TERM_MS 150
@@ -94,7 +96,7 @@
             &kp Q       &kp W       &kp E       &kp R       &kp T               &kp Y       &kp U       &kp I       &kp O       &kp P
 &kp ESCAPE  &kp A       &kp S       &kp D       &kp F       &kp G               &kp H       &kp J       &kp K       &kp L       &trans      &kp ENTER
 &kp LSHIFT  &kp Z       &kp X       &kp C       &kp V       &kp B               &kp N       &kp M       &trans      &trans      &trans      &kp RCTRL
-                                    &kp ESCAPE  &kp LSHIFT  &kp SPACE           &kp ENTER   &kp BSPC    &kp DEL
+                                    &bt BT_CLR_ALL &out OUT_TOG &kp SPACE       &kp ENTER   &kp BSPC    &kp DEL
             >;
         };
 
