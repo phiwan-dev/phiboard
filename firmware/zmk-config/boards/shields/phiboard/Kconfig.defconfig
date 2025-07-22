@@ -1,5 +1,6 @@
-if SHIELD_PHIBOARD_LEFT
+if SHIELD_PHIBOARD_RIGHT
 
+# Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
     default "phiboard"
 config USB_DEVICE_MANUFACTURER
@@ -9,8 +10,17 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+# for Debugging purposes, should never advertise itself
+if SHIELD_PHIBOARD_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "phiboard slave"
+
+endif
+
 if SHIELD_PHIBOARD_LEFT || SHIELD_PHIBOARD_RIGHT
 
 config ZMK_SPLIT
     default y
+
 endif
