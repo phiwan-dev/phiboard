@@ -135,4 +135,61 @@
     };
 
 
+
+    combos {
+        compatible = "zmk,combos";
+        
+        // left home row combos
+        combo_LSHIFT {
+            key-positions = <13 14>;
+            bindings = <&sk LSHIFT>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+        combo_LCTRL {
+            key-positions = <12 14>;
+            bindings = <&sk LCTRL>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+        combo_LMETA {
+            key-positions = <12 13>;
+            bindings = <&sk LMETA>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+        combo_LALT {
+            key-positions = <11 14>;
+            bindings = <&sk LALT>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+        
+        // right home row combos
+        combo_RSHIFT {
+            key-positions = <17 18>;
+            bindings = <&sk RSHIFT>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+        combo_RCTRL {
+            key-positions = <17 19>;
+            bindings = <&sk RCTRL>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+        combo_RMETA {
+            key-positions = <18 19>;
+            bindings = <&sk RMETA>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+        combo_RALT {
+            key-positions = <17 20>;
+            bindings = <&sk RALT>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+    };
+
 };
