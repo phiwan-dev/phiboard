@@ -121,4 +121,18 @@
             >;
         };
 
+
+        nav_umlaut {
+            bindings = <
+            &none       &none       &none       &none       &none                       &none       &kp LBKT    &none       &kp SEMI    &none
+&kp TAB     &kp SQT     &kp MINUS   &none       &none       &none                       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none       &kp DEL
+&kp LSHIFT  &none       &none       &none       &none       &none                       &none       &none       &none       &none       &none       &kp ENTER
+                                            &none       &trans      &none       &none       &none       &none
+            >;
+        };
+
+    
+    };
+
+
 };
