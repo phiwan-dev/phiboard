@@ -100,6 +100,16 @@
             >;
         };
 
-    
-    };
+
+// For the german keyboard layout
+        special_char {
+            bindings = <
+            &kp GRAVE   &kp EQUAL   &none       &none       &none                       &kp LS(N5)  &kp LS(N7)  &kp RA(N7)  &kp RA(N0)  &kp RA(RBKT)
+&kp TAB     &none       &kp LS(N2)  &kp LS(MINUS) &kp LS(N1) &none                      &kp LS(N6)  &kp LS(N0)  &kp LS(N8)  &kp LS(N9)  &kp BSLH    &kp DEL
+&kp LSHIFT  &kp NUBS    &kp LS(NUBS) &none      &none       &none                       &kp RA(NUBS) &kp LS(N4) &kp RA(N8)  &kp RA(N9)  &kp RA(MINUS) &kp ENTER
+                                            &trans      &none       &none       &none       &none       &none
+            >;
+        };
+
+
 };
