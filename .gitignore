@@ -5,6 +5,8 @@ kicad-prj/kicad-prj-backups
 kicad-prj/fp-lib-table
 kicad-prj/kicad-prj.kicad_prl
 kicad-prj/pcb.kicad_prl
+kicad-prj/fp-info-cache
+kicad-prj/~*.lck
 
 # zmk
 firmware/zmk
