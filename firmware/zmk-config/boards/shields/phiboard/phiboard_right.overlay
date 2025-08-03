@@ -3,6 +3,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
+        zephyr,display = &oled_right;
     };
 
     kscan0: kscan_0 {
@@ -25,11 +26,34 @@
             , <&xiao_d 2 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
             , <&xiao_d 3 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
             ;
-    };   
-
+    };
 };
+
 
 &default_transform {
   col-offset = <5>;
+};
+
+
+&xiao_i2c {
+    status = "okay";
+
+    oled_right: ssd1306@3c {
+        status = "okay";
+
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        width = <128>;
+        height = <80>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <31>;
+        //segment-remap;
+        //com-invdir;
+        com-sequential;
+        inversion-on;
+        prechargep = <0x22>;
+    };
 };
 

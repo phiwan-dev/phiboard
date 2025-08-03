@@ -8,6 +8,9 @@ config USB_DEVICE_MANUFACTURER
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_DISPLAY
+    default y
+
 endif
 
 # for Debugging purposes, should never advertise itself
