@@ -3,13 +3,14 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
+        zephyr,display = &oled_left;
     };
+
 
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "col2row";
-
 
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>
@@ -25,6 +26,29 @@
             , <&xiao_d 2 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
             , <&xiao_d 3 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
             ;
-    };   
-
+    };
 };
+
+
+&xiao_i2c {
+    status = "okay";
+
+    oled_left: ssd1306@3c {
+        status = "okay";
+
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        width = <128>;
+        height = <80>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <31>;
+        //segment-remap;
+        //com-invdir;
+        com-sequential;
+        inversion-on;
+        prechargep = <0x22>;
+    };
+};
+

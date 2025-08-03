@@ -19,6 +19,9 @@ if SHIELD_PHIBOARD_LEFT
 config ZMK_KEYBOARD_NAME
     default "phiboard slave"
 
+config ZMK_DISPLAY
+    default y
+
 endif
 
 if SHIELD_PHIBOARD_LEFT || SHIELD_PHIBOARD_RIGHT
