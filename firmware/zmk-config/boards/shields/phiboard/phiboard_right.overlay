@@ -44,13 +44,13 @@
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
         width = <128>;
-        height = <80>;
+        height = <32>;
         segment-offset = <0>;
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <31>;
-        //segment-remap;
-        //com-invdir;
+        segment-remap;
+        com-invdir;
         com-sequential;
         inversion-on;
         prechargep = <0x22>;
