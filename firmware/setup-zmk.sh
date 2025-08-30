@@ -27,8 +27,11 @@ echo doing a clean build...
 (
     rm -rf build/
     cd app/
+    echo == building left half ==
     west build -p -d build/left -b seeeduino_xiao_ble -- -DSHIELD=phiboard_left -DZMK_CONFIG="/workspaces/zmk-config"
+    echo == building right half ==
     west build -p -d build/right -b seeeduino_xiao_ble -- -DSHIELD=phiboard_right -DZMK_CONFIG="/workspaces/zmk-config"
+    echo
     echo == clean build completed ==
     echo future builds can be done with the --cached option
 )
@@ -40,7 +43,9 @@ echo "
 echo doing a successive build...
 (
     cd app/
+    echo == building left half ==
     west build -d build/left
+    echo == building right half ==
     west build -d build/right
 )
 " > zmk/phiboard-build-cached.sh
