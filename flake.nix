@@ -1,6 +1,6 @@
 {
     description = "dev env for development of the phiboard keyboard";
-    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     outputs = { self, nixpkgs }:
     let
