@@ -10,17 +10,12 @@
         devShells.${system}.default = pkgs.mkShell {
 
             buildInputs = with pkgs; [
-                ergogen
-                librecad  # for 2D outlines
+                typst
 
-                kicad     # for PCBs
-
-	            devcontainer  # for zmk
+                devcontainer  # for zmk
             ];
 
             shellHook = ''
-              export __GLX_VENDOR_LIBRARY_NAME="" # To fix kicad with nvidia drivers
-
               echo loaded phiboard shell
             '';
         };
