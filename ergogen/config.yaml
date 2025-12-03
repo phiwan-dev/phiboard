@@ -188,10 +188,10 @@ pcbs:
           D4: "sda"
           D5: "scl"
           D6: "cinner"
-          D10: "cpinky"
-          D9: "cring"
-          D8: "cmiddle"
           D7: "cindex"
+          D8: "cmiddle"
+          D9: "cring"
+          D10: "cpinky"
         where:
           ref: matrix_inner_top
           shift: [kx+2, 0]
