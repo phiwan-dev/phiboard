@@ -9,40 +9,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define QUICK_TAP_MS 125
-#define TAPPING_TERM_MS 150
-#define SLOW_TAPPING_TERM_MS 350
-#define IDLE_TIMEOUT_MS 5000
-#define REQ_IDLE_MS 150
-
-&lt {
-    // Layer toggle
-
-    flavor = "tap-preferred";
-    tapping-term-ms = <TAPPING_TERM_MS>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-};
-
-&sk {
-    // Sticky keys settings, One Shot Keys [QMK]
-
-    release-after-ms = <IDLE_TIMEOUT_MS>;
-    quick-release;
-};
-
-&caps_word {
-    // Allow caps word to continue even when minus or underscore are pressed.
-    // Also prevent mod presses from cancelling caps word.
-
-    continue-list = <
-      UNDERSCORE MINUS
-      LCTRL LALT LGUI LSHFT
-      RCTRL RALT RGUI RSHFT
-      BACKSPACE
-    >;
-
-    /delete-property/ ignore-modifiers;
-};
 
 / {
     behaviors {
