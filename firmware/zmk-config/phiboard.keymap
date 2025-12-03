@@ -31,7 +31,7 @@
             &kp GRAVE   &kp EQUAL   &none       &none       &none                       &kp LS(N5)  &kp LS(N7)  &kp RA(N7)  &kp RA(N0)  &kp RA(RBKT)
 &kp TAB     &none       &kp LS(N2)  &kp LS(MINUS) &kp LS(N1) &none                      &kp LS(N6)  &kp LS(N0)  &kp LS(N8)  &kp LS(N9)  &kp BSLH    &kp DEL
 &kp LSHIFT  &kp NUBS    &kp LS(NUBS) &none      &none       &none                       &kp RA(NUBS) &kp LS(N4) &kp RA(N8)  &kp RA(N9)  &kp RA(MINUS) &kp ENTER
-                                            &trans      &none       &none       &none       &none       &none
+                                            &none       &none       &kp SPACE   &none       &trans      &none
             >;
         };
 
@@ -41,17 +41,17 @@
             &kp F9      &kp F10     &kp F11     &kp F12     &none                       &none       &kp N7      &kp N8      &kp N9      &none
 &kp TAB     &kp F5      &kp F6      &kp F7      &kp F8      &none                       &none       &kp N4      &kp N5      &kp N6      &kp RBKT    &kp DEL
 &kp LSHIFT  &kp F1      &kp F2      &kp F3      &kp F4      &none                       &kp N0      &kp N1      &kp N2      &kp N3      &kp FSLH    &kp ENTER
-                                            &none       &trans      &none       &none       &none       &kp N0
+                                            &none       &none       &kp SPACE   &none       &none       &kp N0
             >;
         };
 
 
         nav_umlaut {
             bindings = <
-            &none       &none       &none       &none       &none                       &none       &kp LBKT    &none       &kp SEMI    &none
+            &none       &none       &out OUT_USB &out OUT_BLE &bt BT_CLR_ALL            &none       &kp LBKT    &none       &kp SEMI    &none
 &kp TAB     &kp SQT     &kp MINUS   &none       &none       &none                       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none       &kp DEL
 &kp LSHIFT  &none       &none       &none       &none       &none                       &none       &none       &none       &none       &none       &kp ENTER
-                                            &none       &trans      &none       &none       &none       &none
+                                            &none       &none       &kp SPACE   &none       &none       &none
             >;
         };
 
