@@ -25,7 +25,10 @@
         };
 
 
-// For the german keyboard layout
+// For the German keyboard layout
+//  %   /   {   }   ~
+//  &   =   (   )   #   DEL
+//  |   $   [   ]   \   ENTER
         special_char {
             bindings = <
             &kp GRAVE   &kp EQUAL   &none       &none       &none                       &kp LS(N5)  &kp LS(N7)  &kp RA(N7)  &kp RA(N0)  &kp RA(RBKT)
@@ -55,7 +58,6 @@
             >;
         };
 
-    
     };
 
 
