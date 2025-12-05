@@ -110,6 +110,12 @@ cd <path-to-phiboard>/firmware
 - care for diode direction (on prototype)
 
 
+# Future fixes (from prototype)
+- key spacing?
+- different display
+
+
+
 # Thanks
 - to https://github.com/MvEerd/ergogen/tree/mveerd for ergogen
 - to https://flatfootfox.com/ergogen-introduction/ for teaching ergogen
