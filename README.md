@@ -102,6 +102,14 @@ cd <path-to-phiboard>/firmware
 - displays have close to 0 documentation at all
 
 
+# Soldering
+- watch a solder intro video if you dont know what you are doing
+- the second half will be better
+- put solder on the pads, then heat the pads and press components in
+- if possible, test connectivity from mcu to front pads
+- care for diode direction (on prototype)
+
+
 # Thanks
 - to https://github.com/MvEerd/ergogen/tree/mveerd for ergogen
 - to https://flatfootfox.com/ergogen-introduction/ for teaching ergogen
