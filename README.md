@@ -90,6 +90,17 @@ cd <path-to-phiboard>/firmware
 - it should now auto-eject and run the new firmware
 
 
+## Fighting with ZMK
+- spend a lot of time on local toolchain and scripts
+- other projects may have their config files in different places
+- explain most important files which the user might want to change (and where)
+- confusing, overwhelming (at first)
+- flash reset firmware to fix problems
+- dtsi is "weird" because of the way the matrix is connected (only on prototype)
+- right overlay columns are reversed because its mirrored but pcb is non-mirrored
+- main half controls layers of secondary half -> perhaps need to flash both sides for keymap to take new changes
+- displays have close to 0 documentation at all
+
 
 # Thanks
 - to https://github.com/MvEerd/ergogen/tree/mveerd for ergogen
