@@ -1,13 +1,15 @@
 
 
-kicad-prototype
 # kicad
-# kicad-prj/kicad-prj-backups
-# kicad-prj/fp-lib-table
-# kicad-prj/kicad-prj.kicad_prl
-# kicad-prj/pcb.kicad_prl
-# kicad-prj/fp-info-cache
-# kicad-prj/~*.lck
+kicad-prototype
+# board
+board/board-backups
+board/fp-lib-table
+board/board.kicad_prl
+board/pcb.kicad_prl
+board/fp-info-cache
+board/~*.lck
+board/#auto_saved_files#
 
 # zmk
 firmware/zmk
