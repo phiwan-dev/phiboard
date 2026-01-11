@@ -1,5 +1,0 @@
-config SHIELD_PHIBOARD_LEFT
-    def_bool $(shields_list_contains,phiboard_left)
-
-config SHIELD_PHIBOARD_RIGHT
-    def_bool $(shields_list_contains,phiboard_right)
