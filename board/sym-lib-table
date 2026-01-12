@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ISP1807")(type "Altium")(uri "${KIPRJMOD}/ISP1807-LR_library/ISP1807-LR_Footprint.SchLib")(options "")(descr "Original manufacturer symbol"))
+)
