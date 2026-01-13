@@ -1,0 +1,20 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "0bf1fdd4-5a89-4735-8383-190e40fb0179")
+	(paper "A4")
+	(title_block
+		(title "phiboard board")
+		(date "2026-01-14")
+		(rev "1")
+		(company "phiwan")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
