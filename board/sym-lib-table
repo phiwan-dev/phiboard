@@ -1,5 +1,5 @@
 (sym_lib_table
   (version 7)
-  (lib (name "ISP1807")(type "Altium")(uri "${KIPRJMOD}/ISP1807-LR_library/ISP1807-LR_Footprint.SchLib")(options "")(descr "Original manufacturer symbol"))
-  (lib (name "ISP1807-edit")(type "KiCad")(uri "${KIPRJMOD}/ISP1807-LR_library/ISP1807-LR_edit.kicad_sym")(options "")(descr "Edited symbol based on manufacturer symbol"))
+  (lib (name "ISP1807-manufacturer")(type "Altium")(uri "${KIPRJMOD}/libraries/ISP1807-LR_Footprint.SchLib")(options "")(descr "Original manufacturer symbol")(disabled)(hidden))
+  (lib (name "ISP1807-edit")(type "KiCad")(uri "${KIPRJMOD}/libraries/nordic-lib-kicad-isp1807.kicad_sym")(options "")(descr "Edited symbol based on manufacturer symbol"))
 )

@@ -4,10 +4,10 @@ in progress, currently in the prototype phase...
 
 # Third-Party Assets
 The following Assets are from a third-party. Their original license still applies. This project license does NOT apply to them.
-- Altium ISP1807 symbol in [`./board/ISP1807-LR_library/ISP1807-LR_Footprint.SchLib`](./board/ISP1807-LR_library/ISP1807-LR_Footprint.SchLib)
+- Altium ISP1807 symbol in [`board/libraries/ISP1807-LR_Footprint.SchLib`](board/libraries/ISP1807-LR_Footprint.SchLib)
 from the [manufacturers website](https://www.insightsip.com/products/bluetooth-le-modules/isp1807). There is no mention of a license.
-- Kicad ISP1807-edit symbol in [`./board/ISP1807-LR_library/ISP1807-LR_edit.kicad_sym`](./board/ISP1807-LR_library/ISP1807-LR_edit.kicad_sym)
-modified but buased on the manufacturers symbol.
+- Kicad ISP1807-edit symbol in [`board/libraries/nordic-lib-kicad-isp1807.kicad_sym`](board/libraries/nordic-lib-kicad-isp1807.kicad_sym)
+modified but based on the manufacturers symbol.
 
 <!-- ## Goals -->
 <!-- - fully reversible pcb including hotswap sockets, MCU, OLED screen -->
