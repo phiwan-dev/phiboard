@@ -3,6 +3,7 @@
 in progress, currently in the prototype phase...
 
 # Third-Party Assets
+### KiCad Symbols
 The following Assets are from a third-party. Their original license still applies.
 - Altium ISP1807 symbol in [`board/libraries/ISP1807-LR_Footprint.SchLib`](board/libraries/ISP1807-LR_Footprint.SchLib)
 from the [manufacturers website](https://www.insightsip.com/products/bluetooth-le-modules/isp1807). There is no mention of a license.
@@ -10,6 +11,9 @@ from the [manufacturers website](https://www.insightsip.com/products/bluetooth-l
 modified but based on the manufacturers symbol. Modifications follow this projects license (CERN-OHL-P-2.0).
 - Kicad Nordic PMIC symbols in [`board/libraries/nordic-lib-kicad-npm.kicad_sym`](board/libraries/nordic-lib-kicad-npm.kicad_sym)
 from https://github.com/hlord2000/nordic-lib-kicad using the CERN-OHL-P-2.0 license.
+### KiCad Footprints
+- Altium ISP1807 footprint in [`board/libraries/ISP1807-LR_Footprint.PcbLib`](board/libraries/ISP1807-LR_Footprint.PcbLib)
+from the [manufacturers website](https://www.insightsip.com/products/bluetooth-le-modules/isp1807). There is no mention of a license.
 
 <!-- ## Goals -->
 <!-- - fully reversible pcb including hotswap sockets, MCU, OLED screen -->
