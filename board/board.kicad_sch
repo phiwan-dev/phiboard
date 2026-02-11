@@ -8637,6 +8637,28 @@
 			)
 		)
 	)
+	(global_label "usbd-"
+		(shape input)
+		(at 40.64 168.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "20c4c720-f0d8-446a-a0c5-c707434142e6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.6073 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "vss"
 		(shape input)
 		(at 64.77 57.15 0)
@@ -8765,6 +8787,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "swd_clk"
+		(shape input)
+		(at 41.91 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3028ad8b-d775-4b48-92bb-155b1cc1faa0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.6677 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8919,6 +8963,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "swd_data"
+		(shape input)
+		(at 43.18 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "50340fc1-d09d-44dc-9af0-9bea3db7dd74")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.5469 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -9750,6 +9816,28 @@
 		(uuid "ab4e2167-129a-4765-a9f4-54d89310f46a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 180.34 56.7485 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "usbd+"
+		(shape input)
+		(at 40.64 171.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "adc50759-041a-4608-a4e7-7f40bff47698")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.6073 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
