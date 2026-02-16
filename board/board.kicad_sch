@@ -9240,7 +9240,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 278.13 69.85 0)
 			(effects
 				(font
@@ -9268,6 +9268,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 278.13 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS PN" "C2296"
 			(at 278.13 69.85 0)
 			(effects
 				(font
@@ -10488,6 +10497,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS PN" "C38523"
+			(at 152.4 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ecf70e24-3807-4d37-9727-834da19860a3")
 		)
@@ -11255,6 +11273,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 139.7 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS PN" "C38523"
 			(at 139.7 187.96 0)
 			(effects
 				(font
@@ -12504,6 +12531,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS PN" "C84256"
+			(at 278.13 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c131cc56-6884-4e74-b0f5-9414430475e6")
 		)
@@ -12819,7 +12855,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 278.13 67.31 0)
 			(effects
 				(font
@@ -12847,6 +12883,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 278.13 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C2297"
 			(at 278.13 67.31 0)
 			(effects
 				(font
