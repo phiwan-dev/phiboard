@@ -486,7 +486,7 @@
 						)
 					)
 				)
-				(number "1"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -576,7 +576,7 @@
 						)
 					)
 				)
-				(number "32"
+				(number "28"
 					(effects
 						(font
 							(size 1.27 1.27)
