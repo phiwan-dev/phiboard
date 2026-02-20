@@ -1,4 +1,4 @@
-(footprint "inductor-0806-2016"
+(footprint "L_0806_2016Metric"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -15,7 +15,7 @@
 			)
 		)
 	)
-	(property "Value" "inductor-0806-2016"
+	(property "Value" "L_0806_2016Metric"
 		(at 0 1.8 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -85,7 +85,7 @@
 		(roundrect_rratio 0.15)
 		(uuid "ed1d4527-3e6e-46b9-b06d-af8eeb2bd005")
 	)
-	(pad "1" smd roundrect
+	(pad "2" smd roundrect
 		(at 0.75 0)
 		(size 0.5 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
