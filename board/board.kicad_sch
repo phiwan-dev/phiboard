@@ -5664,7 +5664,7 @@
 	)
 	(text "power management"
 		(exclude_from_sim no)
-		(at 280.924 22.606 0)
+		(at 279.908 24.638 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11217,7 +11217,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 334.01 74.93 0)
 			(effects
 				(font
@@ -11237,6 +11237,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 334.01 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C307853"
+			(at 334.01 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
