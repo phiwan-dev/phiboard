@@ -9492,9 +9492,9 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4cd7b498-c367-4d16-9f14-226843d6794b")
 		(property "Reference" "J4"
@@ -10886,7 +10886,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "phiboard:THD_0510-30CL-GF"
 			(at 151.13 64.77 0)
 			(effects
 				(font
@@ -10906,6 +10906,15 @@
 		)
 		(property "Description" "Generic connector, single row, 01x30, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 151.13 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JCSC PN" "C283129"
+			(at 151.13 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11095,9 +11104,9 @@
 		(at 168.91 262.89 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9b80810a-94b4-4a71-896f-bf41bfe8cb96")
 		(property "Reference" "J3"
