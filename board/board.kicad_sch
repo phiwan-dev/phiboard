@@ -12281,7 +12281,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "phiboard:nordic_npm1300-QEAA_qfn"
 			(at 308.61 66.04 0)
 			(effects
 				(font
@@ -12300,6 +12300,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 308.61 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C7466043"
 			(at 308.61 66.04 0)
 			(effects
 				(font
