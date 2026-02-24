@@ -1,0 +1,130 @@
+(footprint "magnetic connector 01x02P"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "07151d37-e060-431e-946a-5cbc08608ae8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "magnetic connector 01x02P"
+		(at 0 4.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "37f7e0ce-7262-47c6-bb52-ada566714ce8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "12d10016-ad86-4379-995e-88c1c64c9b7c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4f24c776-a05a-46c1-8446-6274e3cc9aa2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -6 1)
+		(end -5 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "576f1888-bbab-4daf-b1c4-775a59127e9c")
+	)
+	(fp_line
+		(start 6 1)
+		(end 5 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "e28194ae-e4ca-4844-aa92-e0b2f56ff8d8")
+	)
+	(fp_rect
+		(start -6 -2)
+		(end 6 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "User.1")
+		(uuid "f849d25f-41d3-4d4b-b22c-c455eb3a6cd5")
+	)
+	(fp_rect
+		(start -6 0)
+		(end 6 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "User.1")
+		(uuid "fa0fb67e-ef7d-44ea-bc51-c79e54cbee07")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "c468399a-1b4d-4d4a-aa5a-fa7d247db194")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -1.27 3.3)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e5e6765e-0e69-4a5b-a8ff-8675e7148272")
+	)
+	(pad "1" thru_hole circle
+		(at 1.27 3.3)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "02ee18d4-6807-4f5f-b9fa-48dd6b746cb3")
+	)
+	(embedded_fonts no)
+)
