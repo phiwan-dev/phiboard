@@ -7,6 +7,7 @@
 		(at 0 -3 0)
 		(unlocked yes)
 		(layer "F.SilkS")
+		(hide yes)
 		(uuid "2fd6084f-3909-424d-92b1-3a51c0744659")
 		(effects
 			(font
@@ -19,6 +20,7 @@
 		(at 0 3 0)
 		(unlocked yes)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "997ddc14-e506-42ab-9ea4-dbc79762bb9d")
 		(effects
 			(font
@@ -55,7 +57,7 @@
 	)
 	(attr smd)
 	(fp_text user "${REFERENCE}"
-		(at 0 4.75 0)
+		(at 0 3.2 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "87355d82-617e-441f-8e54-70fd7a28c4d8")
