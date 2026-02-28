@@ -1108,7 +1108,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x10"
+		(symbol "Connector_Generic_MountingPin:Conn_01x10_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1124,12 +1124,13 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x10"
-				(at 0 -15.24 0)
+			(property "Value" "Conn_01x10_MountingPin"
+				(at 1.27 -15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -1150,7 +1151,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connectable mounting pin connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1168,7 +1169,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1177,7 +1178,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x10_1_1"
+			(symbol "Conn_01x10_MountingPin_1_1"
 				(rectangle
 					(start -1.27 11.43)
 					(end 1.27 -13.97)
@@ -1297,6 +1298,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -14.732) (xy 1.016 -14.732)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at 0 -14.351 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
 					)
 				)
 				(pin passive line
@@ -1479,10 +1500,28 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 0 -17.78 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x30"
+		(symbol "Connector_Generic_MountingPin:Conn_01x30_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1498,12 +1537,13 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x30"
-				(at 0 -40.64 0)
+			(property "Value" "Conn_01x30_MountingPin"
+				(at 1.27 -40.64 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -1524,7 +1564,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x30, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connectable mounting pin connector, single row, 01x30, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1542,7 +1582,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1551,7 +1591,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x30_1_1"
+			(symbol "Conn_01x30_MountingPin_1_1"
 				(rectangle
 					(start -1.27 36.83)
 					(end 1.27 -39.37)
@@ -1891,6 +1931,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -40.132) (xy 1.016 -40.132)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at 0 -39.751 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
 					)
 				)
 				(pin passive line
@@ -2426,6 +2486,24 @@
 						)
 					)
 					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -43.18 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6356,6 +6434,16 @@
 		)
 		(uuid "c70b61bc-735e-4e3a-b581-e812d5165fdd")
 	)
+	(text "configurable extmode?"
+		(exclude_from_sim no)
+		(at 86.106 34.798 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c7db1a26-0841-493a-ba98-b9732acef3dc")
+	)
 	(text "mouting points\nground case\nadd emi protection"
 		(exclude_from_sim no)
 		(at 328.168 211.836 0)
@@ -6708,6 +6796,14 @@
 	(no_connect
 		(at 290.83 58.42)
 		(uuid "712a2560-a7c6-4103-941a-a4049a910ef6")
+	)
+	(no_connect
+		(at 59.69 64.77)
+		(uuid "7dff79d4-cd99-4498-bc00-7ca2ac196dd9")
+	)
+	(no_connect
+		(at 151.13 107.95)
+		(uuid "8e80b419-18d7-46e1-8c62-32c496e3891e")
 	)
 	(no_connect
 		(at 360.68 168.91)
@@ -11974,7 +12070,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x10")
+		(lib_id "Connector_Generic_MountingPin:Conn_01x10_MountingPin")
 		(at 59.69 46.99 0)
 		(mirror y)
 		(unit 1)
@@ -11992,7 +12088,7 @@
 			)
 		)
 		(property "Value" "Conn_01x10"
-			(at 60.452 62.484 0)
+			(at 59.69 66.294 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12017,7 +12113,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 59.69 46.99 0)
 			(effects
 				(font
@@ -12064,6 +12160,9 @@
 		)
 		(pin "5"
 			(uuid "ceacf70c-48fa-4528-83aa-02bcf9321cfa")
+		)
+		(pin "MP"
+			(uuid "6a2eadfb-8711-45d0-ae44-bbe4466a9b2e")
 		)
 		(instances
 			(project ""
@@ -13876,7 +13975,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x30")
+		(lib_id "Connector_Generic_MountingPin:Conn_01x30_MountingPin")
 		(at 151.13 64.77 0)
 		(mirror y)
 		(unit 1)
@@ -13919,7 +14018,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x30, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x30, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 151.13 64.77 0)
 			(effects
 				(font
@@ -14026,6 +14125,9 @@
 		)
 		(pin "7"
 			(uuid "71d33d29-c61d-402b-9a6e-3a3dba428470")
+		)
+		(pin "MP"
+			(uuid "c000c72f-ebfd-4fcd-b79a-9548847908e3")
 		)
 		(instances
 			(project ""
@@ -15186,7 +15288,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C136423"
+		(property "LCSC PN" "C393939"
 			(at 264.16 172.72 0)
 			(effects
 				(font
@@ -15440,7 +15542,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C136423"
+		(property "LCSC PN" "C393939"
 			(at 375.92 166.37 0)
 			(effects
 				(font
