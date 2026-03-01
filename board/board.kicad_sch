@@ -6816,6 +6816,10 @@
 		(uuid "80e6adf7-5f45-43ae-b326-8995502c62b1")
 	)
 	(no_connect
+		(at 156.21 95.25)
+		(uuid "845f2d72-6661-4fa3-b072-11d21ee78577")
+	)
+	(no_connect
 		(at 151.13 107.95)
 		(uuid "8e80b419-18d7-46e1-8c62-32c496e3891e")
 	)
@@ -7105,7 +7109,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 204.47) (xy 123.19 204.47)
+			(xy 132.08 204.47) (xy 123.19 204.47)
 		)
 		(stroke
 			(width 0)
@@ -7215,7 +7219,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 212.09) (xy 123.19 212.09)
+			(xy 132.08 212.09) (xy 123.19 212.09)
 		)
 		(stroke
 			(width 0)
@@ -7285,7 +7289,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 222.25) (xy 123.19 222.25)
+			(xy 132.08 222.25) (xy 123.19 222.25)
 		)
 		(stroke
 			(width 0)
@@ -7905,7 +7909,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 217.17) (xy 123.19 217.17)
+			(xy 132.08 217.17) (xy 123.19 217.17)
 		)
 		(stroke
 			(width 0)
@@ -7965,7 +7969,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 194.31) (xy 123.19 194.31)
+			(xy 132.08 194.31) (xy 123.19 194.31)
 		)
 		(stroke
 			(width 0)
@@ -8045,7 +8049,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 189.23) (xy 123.19 189.23)
+			(xy 132.08 189.23) (xy 123.19 189.23)
 		)
 		(stroke
 			(width 0)
@@ -8977,7 +8981,7 @@
 	)
 	(global_label "scs"
 		(shape input)
-		(at 128.27 222.25 0)
+		(at 132.08 222.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8987,7 +8991,7 @@
 		)
 		(uuid "0339f329-95a6-4182-b18c-575c82796deb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.4 222.25 0)
+			(at 138.21 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9153,7 +9157,7 @@
 	)
 	(global_label "nreset"
 		(shape input)
-		(at 128.27 204.47 0)
+		(at 132.08 204.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9163,7 +9167,7 @@
 		)
 		(uuid "1ce43fe1-2b7b-41b7-929e-4d2b6f33d27a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.1214 204.47 0)
+			(at 140.9314 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9428,28 +9432,6 @@
 		(uuid "34882b64-609f-4d40-96af-d6b8bd05f7f6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 240.03 149.8381 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "key24"
-		(shape input)
-		(at 156.21 95.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "34ab2902-96b0-4d3e-a541-5a5d45e88a44")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.6985 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9835,7 +9817,7 @@
 	)
 	(global_label "sda"
 		(shape input)
-		(at 128.27 194.31 0)
+		(at 132.08 194.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9845,7 +9827,7 @@
 		)
 		(uuid "8243fd96-1867-4b6a-b763-40a290530153")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.5813 194.31 0)
+			(at 138.3913 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10319,7 +10301,7 @@
 	)
 	(global_label "sclk"
 		(shape input)
-		(at 128.27 212.09 0)
+		(at 132.08 212.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10329,7 +10311,7 @@
 		)
 		(uuid "bae4154b-b82f-4549-bab5-1da052198b07")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.0652 212.09 0)
+			(at 138.8752 212.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10407,7 +10389,7 @@
 	)
 	(global_label "si"
 		(shape input)
-		(at 128.27 217.17 0)
+		(at 132.08 217.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10417,7 +10399,7 @@
 		)
 		(uuid "c66f8dd1-501e-45ec-8330-10090e4c8ea4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 132.8881 217.17 0)
+			(at 136.6981 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10561,7 +10543,7 @@
 	)
 	(global_label "scl"
 		(shape input)
-		(at 128.27 189.23 0)
+		(at 132.08 189.23 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10571,7 +10553,7 @@
 		)
 		(uuid "e45a7160-33ae-4be8-b3d1-4f12e75cb0dd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.0371 189.23 0)
+			(at 137.8471 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11240,9 +11222,9 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "184d1601-edbb-4d46-9e55-b81872733fed")
 		(property "Reference" "J6"
@@ -11742,15 +11724,6 @@
 				(hide yes)
 			)
 		)
-		(property "LSCS" "C19702"
-			(at 344.17 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "3a8849cd-2b5d-446e-83c0-371e2c01f447")
 		)
@@ -11812,15 +11785,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 365.76 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LSCS PN" "C15849"
 			(at 365.76 38.1 0)
 			(effects
 				(font
@@ -12171,7 +12135,7 @@
 				(hide yes)
 			)
 		)
-		(property "LSCS PN" "C1620"
+		(property "LCSC PN" "C1620"
 			(at 105.41 55.88 0)
 			(effects
 				(font
@@ -12388,7 +12352,7 @@
 				(hide yes)
 			)
 		)
-		(property "JCSC PN" "C32346"
+		(property "LCSC PN" "C32346"
 			(at 153.67 180.34 0)
 			(effects
 				(font
@@ -12414,15 +12378,16 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 217.17 143.51 270)
+		(at 217.17 143.51 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3f8e3652-2586-4121-a640-46c076bd2cd7")
-		(property "Reference" "D5"
-			(at 218.948 140.208 90)
+		(uuid "3e6b9332-5ecd-4469-bed9-836463549159")
+		(property "Reference" "D3"
+			(at 219.964 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12430,14 +12395,14 @@
 			)
 		)
 		(property "Value" "D_Schottky"
-			(at 214.376 143.51 0)
+			(at 214.122 143.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 217.17 143.51 0)
 			(effects
 				(font
@@ -12464,16 +12429,25 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC PN" "C8598"
+			(at 217.17 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "01c2e640-a4dc-4ce0-8081-8bb935aa269c")
+			(uuid "00917f62-abc1-48a3-ab86-23c7b777386f")
 		)
 		(pin "1"
-			(uuid "0cbdff52-ba5a-45a7-8e5e-47f637bd15a1")
+			(uuid "840bc7fd-2688-4ff5-86c0-c575f51d01da")
 		)
 		(instances
 			(project "board"
 				(path "/0bf1fdd4-5a89-4735-8383-190e40fb0179"
-					(reference "D5")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -12674,7 +12648,7 @@
 				(hide yes)
 			)
 		)
-		(property "LSCL PN" "C57112"
+		(property "LCSC PN" "C57112"
 			(at 267.97 203.2 0)
 			(effects
 				(font
@@ -12962,9 +12936,9 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4cd7b498-c367-4d16-9f14-226843d6794b")
 		(property "Reference" "J4"
@@ -13364,6 +13338,15 @@
 			)
 		)
 		(property "Description" "Multiprotocol BLE/ANT/2.4 GHz/802.15.4 Cortex-M4F SoC, nRF52840 module"
+			(at 102.87 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C5118826"
 			(at 102.87 209.55 0)
 			(effects
 				(font
@@ -13890,15 +13873,6 @@
 				(hide yes)
 			)
 		)
-		(property "LSCS" "C19702"
-			(at 334.01 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "6ba6d085-13b8-452b-b4a2-12007ccf9677")
 		)
@@ -14031,7 +14005,7 @@
 				(hide yes)
 			)
 		)
-		(property "LSCL PN" "C57112"
+		(property "LCSC PN" "C57112"
 			(at 379.73 195.58 0)
 			(effects
 				(font
@@ -14760,9 +14734,9 @@
 		(at 254 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8679ca62-312b-4142-9aac-d058453142dd")
 		(property "Reference" "J9"
 			(at 254 130.81 0)
@@ -14875,7 +14849,7 @@
 				(hide yes)
 			)
 		)
-		(property "JCSC PN" "C283129"
+		(property "LCSC PN" "C283129"
 			(at 151.13 64.77 90)
 			(effects
 				(font
@@ -15134,9 +15108,9 @@
 		(at 201.93 250.19 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9b80810a-94b4-4a71-896f-bf41bfe8cb96")
 		(property "Reference" "J3"
@@ -15788,15 +15762,6 @@
 				(hide yes)
 			)
 		)
-		(property "LSCL PN" "C19702"
-			(at 347.98 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "c7589185-f82e-4bf5-b299-38dcbc764d77")
 		)
@@ -15858,15 +15823,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 87.63 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LSCS PN" "C15849"
 			(at 87.63 55.88 0)
 			(effects
 				(font
@@ -16280,15 +16236,6 @@
 				(hide yes)
 			)
 		)
-		(property "LSCS PN" "C15849"
-			(at 96.52 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "c0654bf4-7115-47ae-a7dd-5cd24da6609b")
 		)
@@ -16516,7 +16463,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 224.79 137.16 0)
 			(effects
 				(font
@@ -16535,6 +16482,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 224.79 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C8598"
 			(at 224.79 137.16 0)
 			(effects
 				(font
