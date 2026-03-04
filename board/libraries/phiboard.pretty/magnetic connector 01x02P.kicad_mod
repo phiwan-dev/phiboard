@@ -56,6 +56,18 @@
 		)
 	)
 	(attr smd)
+	(fp_poly
+		(pts
+			(xy 6 -2) (xy -6 -2) (xy -6 2) (xy -2.5 2) (xy -2.5 4.5) (xy 2.5 4.5) (xy 2.5 2) (xy 6 2)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8c87e42d-8055-4ac6-955c-1125e60bedc7")
+	)
 	(fp_line
 		(start -6 1)
 		(end -5 1)

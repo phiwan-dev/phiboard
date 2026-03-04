@@ -57,15 +57,26 @@
 	)
 	(attr smd)
 	(fp_rect
-		(start -1.1 -0.9)
-		(end 1.1 0.9)
+		(start -1 -0.8)
+		(end 1 0.8)
 		(stroke
-			(width 0.1)
+			(width 0.03)
 			(type solid)
 		)
 		(fill no)
 		(layer "Dwgs.User")
 		(uuid "29715399-95d1-4821-b0b8-00b4cf6a5c54")
+	)
+	(fp_rect
+		(start -1.2 -1)
+		(end 1.2 1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a414cf5a-b5b5-4fcb-bb92-14cc578069d9")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 1.7 0)
