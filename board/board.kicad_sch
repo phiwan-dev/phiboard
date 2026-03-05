@@ -6140,7 +6140,7 @@
 		)
 		(uuid "c70b61bc-735e-4e3a-b581-e812d5165fdd")
 	)
-	(text "mouting points\nground case"
+	(text "mouting points\nground case\nadd usb c to magnet connector back in (uncheck remove from board)\nusb c magnet adapter change tvs diode"
 		(exclude_from_sim no)
 		(at 328.168 211.836 0)
 		(effects
@@ -6260,6 +6260,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4edf1a42-aabc-4ca6-af9e-daa8f0f4378b")
+	)
+	(junction
+		(at 219.71 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5520d470-7d9f-406e-accb-6dc5c9a5f45e")
 	)
 	(junction
 		(at 383.54 191.77)
@@ -6418,10 +6424,10 @@
 		(uuid "dc5f6ada-f1e4-44ea-a483-f57f912ad189")
 	)
 	(junction
-		(at 217.17 172.72)
+		(at 217.17 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "df383670-4144-45ae-b22e-66c694f5321b")
+		(uuid "ded29169-86ec-4cc3-a999-2f9a1141aa69")
 	)
 	(junction
 		(at 339.09 71.12)
@@ -6440,12 +6446,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7bbfe14-f2f0-4cba-a92f-6a1dfa9d851e")
-	)
-	(junction
-		(at 219.71 175.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f9dba3f3-1f28-474b-94bd-5c5d41983c8f")
 	)
 	(no_connect
 		(at 82.55 222.25)
@@ -6697,16 +6697,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 170.18) (xy 217.17 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0793d16a-e089-46b4-b433-9fe21bb5ef95")
-	)
-	(wire
-		(pts
 			(xy 76.2 168.91) (xy 82.55 168.91)
 		)
 		(stroke
@@ -6744,6 +6734,16 @@
 			(type default)
 		)
 		(uuid "0a47d14b-e6db-4931-8c09-37175fe830f3")
+	)
+	(wire
+		(pts
+			(xy 217.17 170.18) (xy 217.17 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aeb7bc8-7b55-42ca-99a2-bf7180449b4a")
 	)
 	(wire
 		(pts
@@ -7387,6 +7387,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 170.18) (xy 219.71 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5849d085-aa3b-4581-9ecd-c6df77b4d37a")
+	)
+	(wire
+		(pts
 			(xy 271.78 198.12) (xy 271.78 203.2)
 		)
 		(stroke
@@ -7404,16 +7414,6 @@
 			(type default)
 		)
 		(uuid "5fdb6eec-37dd-49e0-a5d5-74970bda2aba")
-	)
-	(wire
-		(pts
-			(xy 219.71 170.18) (xy 219.71 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6138d14b-0b40-45bc-976b-2f29dc2692f1")
 	)
 	(wire
 		(pts
@@ -7597,16 +7597,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 175.26) (xy 219.71 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bfe8293-fc07-4ae4-9ee5-f8b969ce0c2f")
-	)
-	(wire
-		(pts
 			(xy 217.17 157.48) (xy 248.92 157.48)
 		)
 		(stroke
@@ -7687,6 +7677,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 172.72) (xy 246.38 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "867fe80a-b5cd-4629-8721-5a62b7437901")
+	)
+	(wire
+		(pts
 			(xy 107.95 160.02) (xy 107.95 163.83)
 		)
 		(stroke
@@ -7744,16 +7744,6 @@
 			(type default)
 		)
 		(uuid "8e67104d-3909-437b-a594-fbadeea2230c")
-	)
-	(wire
-		(pts
-			(xy 217.17 172.72) (xy 246.38 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ea81f16-af79-4366-a69c-5dbd3a3e0092")
 	)
 	(wire
 		(pts
@@ -7984,6 +7974,16 @@
 			(type default)
 		)
 		(uuid "ad5fbfd8-ccdb-43c6-b3f3-18ade10193a0")
+	)
+	(wire
+		(pts
+			(xy 217.17 175.26) (xy 246.38 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b02bbb6d-1a52-4eab-959a-faba070cfd09")
 	)
 	(wire
 		(pts
@@ -8397,7 +8397,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 175.26) (xy 246.38 175.26)
+			(xy 198.12 175.26) (xy 217.17 175.26)
 		)
 		(stroke
 			(width 0)
@@ -8537,7 +8537,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 172.72) (xy 217.17 172.72)
+			(xy 198.12 172.72) (xy 219.71 172.72)
 		)
 		(stroke
 			(width 0)
@@ -10191,7 +10191,7 @@
 			)
 		)
 	)
-	(global_label "vusb_raw"
+	(global_label "vbus_raw"
 		(shape input)
 		(at 200.66 137.16 180)
 		(fields_autoplaced yes)
@@ -11772,7 +11772,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 212.09 143.51 0)
 			(effects
 				(font
@@ -11799,7 +11799,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C8598"
+		(property "LCSC PN" "C191023"
 			(at 212.09 143.51 0)
 			(effects
 				(font
@@ -13207,7 +13207,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "phiboard:DFN2010"
 			(at 218.44 165.1 0)
 			(effects
 				(font
@@ -15922,7 +15922,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 212.09 137.16 0)
 			(effects
 				(font
@@ -15949,7 +15949,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C8598"
+		(property "LCSC PN" "C191023"
 			(at 212.09 137.16 0)
 			(effects
 				(font
