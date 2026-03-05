@@ -7,15 +7,15 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 3.81 0)
+			(at -2.032 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "TVS_Array"
+			(at 4.318 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49,20 +49,19 @@
 				(hide yes)
 			)
 		)
-		(symbol "BDFN2010A054R_0_1"
+		(symbol "BDFN2010A054R_1_1"
 			(rectangle
 				(start -2.54 2.54)
 				(end 2.54 -3.81)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type color)
+					(color 255 255 194 1)
 				)
 			)
-		)
-		(symbol "BDFN2010A054R_1_1"
 			(pin passive line
 				(at -5.08 1.27 0)
 				(length 2.54)
