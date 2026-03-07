@@ -10355,6 +10355,18 @@
 		)
 		(embedded_fonts no)
 	)
+	(gr_poly
+		(pts
+			(xy 71 47) (xy 71 57.5) (xy 90 57.5) (xy 90 67) (xy 109 67) (xy 109 76.5) (xy 129.05 76.5) (xy 129 47)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "dfa3034c-57ab-43c6-bd4b-f9afe05d89ef")
+	)
 	(gr_line
 		(start 82.3 145.4)
 		(end 24.35 145.4)
