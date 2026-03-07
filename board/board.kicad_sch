@@ -14181,7 +14181,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(uuid "895ed50d-2727-4993-ba5e-4cd6e492e35f")
 		(property "Reference" "R14"
@@ -14501,7 +14501,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(uuid "957ffb86-e22b-4a4c-813a-3e7b8f05c227")
 		(property "Reference" "R4"
